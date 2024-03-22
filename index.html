@@ -1,0 +1,17 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+    fetch(`http://localhost/backendTienda/listaProductosCRUD.php?datos_general=all`, {
+        method: 'GET',
+        headers: {
+            Accept: 'application/json',
+            'Content-Type': 'text/html'
+        }
+    })
+        .then((response) => response.json())
+        .then((responseData) => {
+            console.log(responseData)
+        })
+        .catch((error) => {
+            console.error('error', error)
+        });
+</script>
