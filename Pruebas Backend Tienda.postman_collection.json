@@ -1,0 +1,317 @@
+{
+	"info": {
+		"_postman_id": "c67061a0-9e06-4415-a0d9-59d7431c56f7",
+		"name": "Pruebas Backend Tienda",
+		"description": "Algunas de las pruebas que se pueden hacer con el administrador de la marca del API REST FULL.\n\nhttp://tiendatecnolo.softdevdsrp.com.co/marcaCRUD.php\n\n[https://github.com/DavidApRey/backendTienda](https://github.com/DavidApRey/backendTienda)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19471085"
+	},
+	"item": [
+		{
+			"name": "Marcas",
+			"item": [
+				{
+					"name": "Datos Generales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tiendatecnolo.softdevdsrp.com.co/marcaCRUD.php?datos_general=all",
+							"protocol": "https",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"marcaCRUD.php"
+							],
+							"query": [
+								{
+									"key": "datos_general",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dato Especifico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://tiendatecnolo.softdevdsrp.com.co/marcaCRUD.php?datos_especi=all&id_marca=13",
+							"protocol": "http",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"marcaCRUD.php"
+							],
+							"query": [
+								{
+									"key": "datos_especi",
+									"value": "all"
+								},
+								{
+									"key": "id_marca",
+									"value": "13"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Registro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_cons\": \"11\",\r\n    \"marca\": \"PRUEBA DE MODIFICACION envio\",\r\n    \"estado\": \"N\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://tiendatecnolo.softdevdsrp.com.co/marcaCRUD.php",
+							"protocol": "http",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"marcaCRUD.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Registro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"marca\": \"Apple2\",\r\n    \"estado\": \"Y\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://tiendatecnolo.softdevdsrp.com.co/marcaCRUD.php",
+							"protocol": "http",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"marcaCRUD.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Registro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_cons\": \"14\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://tiendatecnolo.softdevdsrp.com.co/marcaCRUD.php",
+							"protocol": "http",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"marcaCRUD.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sistema Operativo",
+			"item": [
+				{
+					"name": "Datos Generales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tiendatecnolo.softdevdsrp.com.co/soCRUD.php?datos_general=all",
+							"protocol": "https",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"soCRUD.php"
+							],
+							"query": [
+								{
+									"key": "datos_general",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Dato Especifico",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://tiendatecnolo.softdevdsrp.com.co/soCRUD.php?datos_especi=all&id_so=4",
+							"protocol": "https",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"soCRUD.php"
+							],
+							"query": [
+								{
+									"key": "datos_especi",
+									"value": "all"
+								},
+								{
+									"key": "id_so",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Registro",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_cons\": \"4\",\r\n    \"id_marca\": \"13\",\r\n    \"version_so\": \"MacOS Monterey 12\",\r\n    \"sistema_operativo\": \"MacOS\",\r\n    \"estado\": \"Y\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tiendatecnolo.softdevdsrp.com.co/soCRUD.php",
+							"protocol": "https",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"soCRUD.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Registro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_marca\": \"13\",\r\n    \"version_so\": \"MacOS Monterey\",\r\n    \"sistema_operativo\": \"MacOS\",\r\n    \"estado\": \"Y\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tiendatecnolo.softdevdsrp.com.co/soCRUD.php",
+							"protocol": "https",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"soCRUD.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Registro",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id_cons\": \"4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://tiendatecnolo.softdevdsrp.com.co/soCRUD.php",
+							"protocol": "https",
+							"host": [
+								"tiendatecnolo",
+								"softdevdsrp",
+								"com",
+								"co"
+							],
+							"path": [
+								"soCRUD.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
